@@ -1,6 +1,6 @@
 import type { Market, Trade, OrderBook, ChartDataPoint, Category, MarketStats } from '../types';
 
-const generateId = () => Math.random().toString(36).substr(2, 9);
+const generateId = () => Math.random().toString(36).substring(2, 11);
 
 const formatWallet = (seed: number) => {
   const hex = seed.toString(16).padStart(4, '0');
